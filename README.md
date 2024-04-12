@@ -28,7 +28,7 @@ Repository holding general files for whole Fullstack MLOps Platform for Formula 
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
 
-# Setup Infrastructure layer
+# Setup Services layer
 helm install prometheus prometheus-community/kube-prometheus-stack -n f1-platform
 helm install prometheus-stack ./prometheus-stack-helm/
 helm install minio ./minio-helm/
