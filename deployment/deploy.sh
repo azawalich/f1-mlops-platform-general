@@ -3,9 +3,11 @@ helm repo add prometheus-community https://prometheus-community.github.io/helm-c
 helm repo update
 
 # Setup Infrastructure layer
+helm install minio ./minio-helm/
+# wait for setting-up buckets
+sleep 120
 helm install prometheus prometheus-community/kube-prometheus-stack -n f1-platform
 helm install prometheus-stack ./prometheus-stack-helm/
-helm install minio ./minio-helm/
 helm install mlflow ./mlflow-helm/
 
 # Setup Application Layer
