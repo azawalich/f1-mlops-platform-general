@@ -6,8 +6,8 @@ helm repo update
 helm install minio ./minio-helm/
 # wait for setting-up buckets
 sleep 120
-helm install prometheus prometheus-community/kube-prometheus-stack -n f1-platform
-helm install prometheus-stack ./prometheus-stack-helm/
+helm install prometheus prometheus-community/kube-prometheus-stack
+helm install own-prometheus ./prometheus-stack-helm/
 helm install mlflow ./mlflow-helm/
 
 # Setup Application Layer
