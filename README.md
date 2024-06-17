@@ -1,9 +1,11 @@
 # f1-mlops-platform-general
 Repository holding general files for whole Fullstack MLOps Platform for Formula 1 project.
 
-# Platform 
-## Architecture
+# Architecture
+## Platform
 ![sample image](./architecture/f1-platform-architecture-reds.png)
+## Academy component
+![sample image](./architecture/F1-Platform-Academy-architecture.png)
 
 ## Components
 
